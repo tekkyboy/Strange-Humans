@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="index.html">Back</a>
+    <h2>The Alpha Phi Omega era (Fall 2018 - Fall 2021)</h2>
+    <div>The Alpha Phi Omega era of my life lasted for a good three years of my life. Personally
+        speaking, I'm surprised that Alpha Phi Omega impacted my life for as long as it did given the following: </div>
+    <ul>
+        <li>I pledged for the fraternity during Fall 2018.</li>
+        <li>I stayed active with the fraternity for Spring 2019 until external circumstances caused me to retire early.
+        </li>
+        <li>I stayed around the fraternity for Fall 2019 as an inactive member.</li>
+        <li>In Spring 2020, the fraternity was closed due to COVID-19.</li>
+    </ul>
+    <div>Nonetheless, I would say that being in Alpha Phi Omega influenced me as an individual for the better I should
+        say. It certainly impacted my college life the most as everyone helped me to be more open minded about the life
+        styles and situations of other people beyond my own life and the people I grew up with from the high school era.
+    </div>
+    <hr>
+    <h2>About Alpha Phi Omega Me: </h2>
+    <a href="https://imgur.com/yfyq5DB">
+        <img src="https://imgur.com/yfyq5DB.png" class="center" height="300">
+    </a>
+    <p>"Ah well... I was just coming and going as usual, tuning in and out however I feel like. But it's my duty to help
+        out wherever I can."</p>
+    <div>
+        When I first started college, I was someone who was rather social yet socially awkward at the same time.
+        Eventually, I grew out of my socially awkward phase and became more comfortable talking to other people
+        with ease. Yet I was far more authoritative and brutally honest in nature, than I was in high school, with a
+        preference for letting everyone else know what I thought of any topic during any given time. Eventually that
+        phase mellowed out over the pandemic, learning to talk less and started listening more to others.
+        Becoming more caring by learning to respect the decisions and lifestyles of people living different lives
+        compared to the life that I lived.
+    </div>
+    <hr>
+    <h2>About Alpha Phi Omega: </h2>
+    <div>Alpha Phi Omega is a national co-ed community service fraternity, found in 350 college campuses across the
+        United States. The national organization was started in 1925. My college's chapter was started in 1969 and was
+        active until 1997. About 15 years later, the chapter was restarted in 2012 and continued to run for a good 8
+        years until the COVID-19 pandemic where the entire chapter was placed under hiatus.</div>
+    <br>
+    <div>As a community service fraternity, the fraternity was mostly centered on performing community service events
+        for our college and our communities. Obviously. We would participate in community service events year round,
+        ranging from campus clean-up events to planting trees to serving in homeless shelters. Apart from that, we would
+        also spend agood amount of time getting dinner and/or boba, visiting major sites like Downtown Disney
+        or a random mall, or attending other Alpha Phi Omega chapters within the SoCal region.</div>
+    <br>
+    <div>The majority of Alpha Phi Omega's membership was composed of mostly Asian Americans with several Hisapnic
+        Americans. A bulk of the membership consisted of individuals from the San Gabriel Valley, but there were others
+        from cities such San Bernardino, Long Beach, and Anaheim and their neighboring cities.</div>
+    <br>
+    <div>I would say that almost everyone was loyal towards each other at one point or another. Before the chapter was
+        placed on hiatus, our entire chapter operated on the mentality of 'Nobody Left Behind'. And since our chapter
+        was smaller than most chapters, about 60 active members in total when I pledged, everyone cared about each other
+        to one extent or another.</div>
+    <hr>
+    <h2>About my friends: </h2>
+    <div>Not all of my friends during this time were from Alpha Phi Omega. A majority of them were though. And those who
+        weren't in Alpha Phi Omega did hear me talk about the fraternity a lot during the pre-pandemic years.
+        But that said though, all of the friends that I made during this era of my life were far more exploratory in
+        nature. They were always pushing themselves to explore different lifestyles and to enjoy life as much as
+        possible, often to the point of great and extreme personal risk.</div>
+    <br>
+    <div>Due to the complex nature of the college life, I will be dividing my friends based on when I met them first in
+        regards to my career with Alpha Phi Omega. </div>
+
+    <button type="button" class="collapsible" onclick="openList()">Pre-Pledging Friendships (August, September 2018)
+    </button>
+    <div class="content">
+        <ul>
+            <li>
+                Gracie Davis
+            </li>
+            <li>
+                Andre Artsiv
+            </li>
+            <li>
+                Diane Marco
+            </li>
+            <li>
+                <a href = "kaitlynn.html">Kaitlynn Deamor</a>
+            </li>
+            <li>
+                Vanessa Maikli
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="collapsible" onclick="openList()">Pledging Friendships (October, November, December
+        2018)</button>
+    <div class="content">
+        <ul>
+            <li>
+                Megan Han
+            </li>
+            <li>
+                Dominic Sharp
+            </li>
+            <li>
+                Paola Corazon
+            </li>
+            <li>
+                Ana Patricia
+            </li>
+            <li>
+                Canitha Xeno
+            </li>
+            <li>
+                Nathan Shangxin
+            </li>
+            <li>
+                William Susipotano
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="collapsible" onclick="openList()">Post-pledging Friendships (Spring 2019)</button>
+    <div class="content">
+        <ul>
+            <li>
+                Mervyn Shines
+            </li>
+            <li>
+                Irene Yue
+            </li>
+            <li>
+                Melody Song
+            </li>
+            <li>
+                Emily Wyns
+            </li>
+            <li>
+                Adriana De Anima
+            </li>
+            <li>
+                Kyra Masining
+            </li>
+            <li>
+                Sara Hoshi
+            </li>
+            <li>
+                Yeon Byeol
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="collapsible" onclick="openList()">APO Hiatus Friendships (Fall 2019 - Fall
+        2021)</button>
+    <div class="content">
+        <ul>
+            <li>
+                Justin Jeonsa
+            </li>
+            <li>
+                Christina Samset
+            </li>
+            <li>
+                Anita Youmo
+            </li>
+            <li>
+                Kristen Meka
+            </li>
+            <li>
+                Daniel Shandian
+            </li>
+            <li>
+                Lydia Shenghuo
+            </li>
+            <li>
+                Raymond Maudo
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+
+</html>
