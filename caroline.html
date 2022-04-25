@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="highschool.html">Back</a>
+    <h2>Caroline Moore</h2>
+    <a href="https://imgur.com/ucTnbiJ">
+        <img src="https://imgur.com/ucTnbiJ.png" class="center">
+    </a>
+    <p>"Everything is interesting to me because I don't understand it yet."</p>
+    <button type="button" class="collapsible" onclick="openList()">Generalized Biology
+    </button>
+    <div class="content">
+        <ul>
+            <li>Gender: Female</li>
+            <li>Eye Color: Light Blue</li>
+            <li>Hair Color: Blonde</li>
+            <li>Hair Length: Up to neck</li>
+            <li>Zodiac Birth Sign: Taurus</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How I Met Her
+    </button>
+    <div class="content">
+        I first met Caroline Moore back in 2004. We attended the same elementary school together. But we never really
+        talked to each other during that time of our lives. I've started talking to her somewhat in middle school during
+        2012-2014, but it was rather superficial talk at the time. Then in high school, we had a couple of classes for
+        the
+        first year but we never really connected or talked to each other beyond the surface level conversations or
+        academic context. It wasn't until Fall 2016 that we were finally able to hold far more meaningful conversations
+        after I crashed into her library friend group.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How We Became Friends
+    </button>
+    <div class="content">
+        We became friends during Fall 2016 for a variety of reasons. One, we both shared more classes together that
+        academic year than previously. Two, she needed my help for said classes. Three, she had a variety of guy issues
+        and she needed advice. So I served as her main advisor regarding how to deal with her guy problems. The details
+        of this are not necessary and have long since become a thing of the past.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">Five Fun Facts
+    </button>
+    <div class="content">
+        <ol>
+            <li>Caroline is a fan of the Star Wars Original Trilogy films. Her favorite character is Luke Skywalker.</li>
+            <li>Caroline is a fan of Avatar: The Last Airbender. Her ideal element bending art would be Earth-bending.</li>
+            <li>She is a very analytical person with an interest in environmental conservatism.</li>
+            <li>She is an introvert and prefers having a close network of friends.</li>
+            <li>She has a casual interest in the arts, specifically film-making.</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>

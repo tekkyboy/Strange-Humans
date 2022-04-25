@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="index.html">Back</a>
+    <h2>The High School era (Fall 2015 - Spring 2018)</h2>
+    <p>High school era spanned three years of my life, from the seasons of Fall 2015 to Spring 2018. It was during
+        these
+        three years where I learned to become more comfortable talking to lots of different people. Never really had a
+        fixed friend group, always kept on bouncing between different people over the years. But in the end, it was
+        worth it for the experience.</p>
+    <p>
+        The many humans that I have met over these years are listed down below, separated by the year as to when I met
+        them as opposed to when I became friends with them. I would say that I became friends with all of my friends
+        from high school after high school. So to me, it makes sense to list when I met them first.
+    </p>
+    <hr>
+    <h2>About High School Me: </h2>
+    <a href="https://imgur.com/SgVS8E5">
+        <img src="https://imgur.com/SgVS8E5.png" class="center" height="250">
+    </a>
+    <p>High School Kylan at his finest.</p>
+    <div>During my first year of high school (Fall 2014 - Spring 2015), I started off as a really quiet and shy
+        teenage boy with severe social anxiety talking to people. But that soon started to change in our high school's AP
+        World History class, where I was known for my many memetic quotes and speeches. It was that class that enabled
+        me to be my best teenage self - a comedian and clown who often rebelled against authoritative figures and the
+        status quo, becoming popular with my peers by derailing class time by going off on massive tangents, and
+        involving classmates in my many side
+        projects and social experiments. This popularity eclipsed in me becoming the Prom King of our graduating class.
+    </div>
+    <hr>
+    <h2>About my friends: </h2>
+    <div>My friends during this time were a wide array of individuals localized mostly within our high school's AP
+        community. All of my high school friends, I should say, are intelligent and open-minded people. I say this
+        because collectively, all of my high school
+        friends were interested in learning about who I was as an individual and why I acted the way I acted during
+        classtime and outside of it. I would also like to say that most of my high school friends are loyal to one
+        another. Everyone is genuinely supportive of one another, regardless of their social status, economic status,
+        ethnicity, and so on. </div>
+
+    <button type="button" class="collapsible" onclick="openList()">Sophmore Year (Fall 2015 (Ζ)/Spring 2016
+        (Η))</button>
+    <div class="content">
+        <ul>
+            <li>
+                Abigayle
+            </li>
+            <li>
+                Eric
+            </li>
+            <li>
+                Cole
+            </li>
+            <li>
+                Jason
+            </li>
+            <li>
+                Justin
+            </li>
+            <li>
+                Petra
+            </li>
+            <li>
+                Ross
+            </li>
+            <li>
+                Ashley
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="collapsible" onclick="openList()">Junior Year (Fall 2016 (Θ)/Spring 2017 (Ι))</button>
+    <div class="content">
+        <ul>
+            <li>
+                <a href="caroline.html">Caroline</a>
+            </li>
+            <li>
+                Julianna
+            </li>
+            <li>
+                Hannah
+            </li>
+            <li>
+                Darren
+            </li>
+            <li>
+                Eric
+            </li>
+            <li>
+                Danielle
+            </li>
+            <li>
+                Angie
+            </li>
+            <li>
+                Nick
+            </li>
+            <li>
+                Alan
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="collapsible" onclick="openList()">Senior Year (Fall 2017 (Κ)/Spring 2018 (Λ))</button>
+    <div class="content">
+        <ul>
+            <li>
+                Jackie
+            </li>
+            <li>
+                Jan
+            </li>
+            <li>
+                Jennifer
+            </li>
+            <li>
+                Jacky
+            </li>
+            <li>
+                Dylan
+            </li>
+            <li>
+                Brooke
+            </li>
+            <li>
+                David
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+
+</html>
