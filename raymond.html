@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="apo.html">Back</a>
+    <h2>Raymond Maudo</h2>
+    <a href="https://imgur.com/E4VbbcR">
+        <img src="https://imgur.com/E4VbbcR.png" class="center">
+    </a>
+    <p>"I'm probably not the best man for the job, but I'll do my best anyway!"</p>
+    <button type="button" class="collapsible" onclick="openList()">Generalized Biology
+    </button>
+    <div class="content">
+        <ul>
+            <li>Gender: Male</li>
+            <li>Eye Color: Brown</li>
+            <li>Hair Color: Black </li>
+            <li>Hair Length: Short </li>
+            <li>Zodiac Birth Sign: Taurus</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How I Met Him
+    </button>
+    <div class="content">
+        I first met Raymond while I was pledging for Alpha Phi Omega, just as another person to interview. We
+        rarely talked to each other while I was pledging. We've maintained steady contact over the years. Most of the
+        time, he reminded me on my limits as to what to say and what not to say, how to act and how not to
+        act, and so forth.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How We Became Friends
+    </button>
+    <div class="content">
+        We became friends much later after I was done with Alpha Phi Omega. We ran into each other on campus back in
+        Spring 2022, and we took the time to casually talk about the state of affairs regarding the community around us.
+        We talked and we connected over how much we agreed on many talking points about conflicts and events that
+        happened in the past.
+        It was this connection and determination to prevent pointless conflicts to happen again which cemented him as a
+        good friend.
+        Someone worth mentioning as one of the many strange, strange humans in this world.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">What I like about him and why I consider him to be a
+        life long friend
+    </button>
+    <div class="content">
+        What I like about Raymond is the fact that he is a caring individual, someone who makes strangers feel included
+        in his life. He understands the values of hardships and struggles, so he'll do his best to help out everyone
+        else and alleviate their burdens. Raymond is the type of guy you could trust to be on your side, especially when
+        you feel like the rest of the world is conspiring against you. He also has a strong morale side, so you'll know
+        that he'll always be on your side. I consider Raymond to be a life long friend because of his morality, even
+        though we've just started being friends with each other. I like having people like him around to remind me about
+        what the normal moral boundaries are for most people, given my alien perspective on human life.
+        I also admire his long lasting relationship with his girlfriend, which is something I'd like to have one day.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">Five Fun Facts
+    </button>
+    <div class="content">
+        <ol>
+            <li>Raymond is colorblind. Forgot which type of colorblind he is but that's not exactly important.</li>
+            <li>Raymond is currently living in a house with four other people from Alpha Phi Omega.</li>
+            <li>Raymond has been in a relationship for at least 5 years.</li>
+            <li>Raymond's favorite architectural landmark is the National Orange Show Event Center.</li>
+            <li>He considers himself to be an alpha rebel - someone who takes the initiative fighting against the status
+                quo should it be too unreasonable for the majority of people .</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
