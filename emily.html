@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="apo.html">Back</a>
+    <h2>Emily Wyns</h2>
+    <a href="https://imgur.com/8gpO1YK">
+        <img src="https://imgur.com/8gpO1YK.png" class="center" height="500">
+    </a>
+    <p>"I'm always bringing my A game everywhere I go."</p>
+    <button type="button" class="collapsible" onclick="openList()">Generalized Biology
+    </button>
+    <div class="content">
+        <ul>
+            <li>Gender: Female</li>
+            <li>Eye Color: Brown</li>
+            <li>Hair Color: Orange Red</li>
+            <li>Hair Length: To Shoulders</li>
+            <li>Zodiac Birth Sign: Taurus</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How I Met Her
+    </button>
+    <div class="content">
+        I met Emily Wyns back while I was pledging for Alpha Phi Omega. Emily Wyns was also involved with the fraternity
+        but had retired from active life by the time I met her. We met each other somewhere on the fourth floor of the
+        college library, where she happened to be catching up with other members from the fraternity. I was able to talk
+        to her for some time, thinking that she was part of our interview checklist. She was not. I still talked to her
+        regardless as I would have wanted to talk to anybody anyway.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How We Became Friends
+    </button>
+    <div class="content">
+        I became friends with Emily Wyns slowly over time as I ran into her on campus constantly at random places.
+        Mostly, we would talk and share our pledging experiences. We also became friends because we've had mutual
+        friendships through Will and Megan. We also kept in touch over the pandemic with occasional words of
+        encouragement, commenting on the odd photo on our social media platforms here and there. I also invited her to
+        my 21st birthday party and was genuinely surprised to see that she showed up. It was the fact that she showed
+        up, even though we've barely made a meaningful friendship over the past three years, was what proved to me that
+        we had a genuine
+        friendship.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">What I like about her and why I consider her to be a
+        life long friend
+    </button>
+    <div class="content">
+        What I like about Emily Wyns is the fact that she's relatively down to Earth and very nice to talk to. While I
+        don't have an overtly deep and meaningful friendship with her, we do hold a great amount of respect for one
+        another. Emily was also one of the few people who treated everyone equally and fairly. While she was closer to
+        Megan compared to most people, it was a special type of non-blood sibling relationship between the two of them.
+        I think the fact that she was open to talk to me, even though I was a rather socially awkward person at the
+        time, was what made me so impressed by her and her character. She didn't overtly care about how other people
+        percieved her, the fact that she would take the time to know some oddball like myself.
+        <br>
+        I consider Emily to be a life long friend on the sole purpose that I like hanging out with her. I like
+        maintaining a nice friendship with her, even if it won't become overtly deep and complicated. Someonetimes, nice
+        friendships are all one needs with another person. Nothing too complicated or complex is necessary to enjoy
+        another person's company. I think also the fact that she's still talking to me even though she doesn't have any
+        value to continue talking to me is a nice benefit on its own.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">Five Fun Facts
+    </button>
+    <div class="content">
+        <ol>
+            <li>Emily enjoys travelling with friends. Favorite place to visit is Las Vegas.</li>
+            <li>Emily's personality can be described as Asian Chic as she likes wearing fancy clothes and posing with
+                her friends, capturing moments as artistic photos, and enjoys fine winery dining.</li>
+            <li>She has had an extensive career working in the nutrition industry, as a server first and later as a
+                nutrionary aide.</li>
+            <li>Maintains close friendships with four of her p-bros. They've renewed their friendship by taking
+                Christmas photos on the same set of steps wearing Christmas themed clothes.</li>
+            <li>She is generally considered to be a trusting friend by those who know her.</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
