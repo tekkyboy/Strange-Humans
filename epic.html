@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <title>Epic Movement Era</title>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="index.html">Back</a>
+    <h2>The Epic Movement era (Spring 2022 - Present)</h2>
+    <div>This is an ongoing moment in my life. I don't know how long this era of my life will last. All I do know is
+        that it feels different this time.</div>
+    <hr>
+    <h2>About Epic Movement Me: </h2>
+    <a href="https://imgur.com/TCf4l6A">
+        <img src="https://imgur.com/TCf4l6A.png" class="center" height="400">
+    </a>
+    <p>"God has created me the way that I am for a reason. God has sent me on the path I travelled for a reason. I just
+        don't know what that reason is yet."</p>
+    <div>There is this side of me that most people don't know about me. I'm a Catholic Christian. Have been for at least
+        five years now. Went through the confirmation process during the High School era of my life. I was raised as a
+        Catholic for my childhood. But being a Catholic isn't something that I go about openly expressing for many
+        reasons. After living a social life with many
+        non-Christians, I've decided that it was time for me to return to my roots and embrace the person that I was
+        before I was a teenager. Being in Epic Movement has helped me embrace my Christian roots.</div>
+    <br>
+    <div>Since I am one of the older members in the organization, I tend to see everyone below my year as significantly
+        younger in terms of both age and life experience. I feel like I act like a dad or a grandfather towards the
+        freshmen especially.</div>
+    <hr>
+    <h2>About Epic Movement:</h2>
+    <div>Epic Movement is an organizaiton targeted towards young adult Asian Christians. It is an organization where all
+        Asian Christians can develop a relationship with God at their own rate and form close friendships with those
+        with similar backgrounds to them.</div>
+    <br>
+    <div>Historically, Epic Movement has been around Cal Poly Pomona since 2006. But like many college organizations, it
+        went on hiatus during the height of the COVID-19 pandemic. But unlike many college organizations, Epic Movement
+        persisted online as the memberships were composed of Christians seeking a realtionship with God through others.
+        Therefore, unlike say a college fraternity that benefits from in person social interactions, a college Christian
+        youth group persisted through the power of their faith alone.</div>
+    <br>
+    <div>Furthermore, if the idea of forming relationships with other young adults who believe in God through an online
+        setting is too much for you to comprehend or understand, then maybe this group isn't for you.
+    </div>
+    <hr>
+    <h2>About my Epic Movement era friendships: </h2>
+    <div>As this is a developing era in my life, it's too soon to tell what kind of people my friends are and the
+        quality of relationships I will have with each of them. I do know that some of them are life long friends
+        through what I would call the Will of God alone. The Will of God is something that can't be easily proven, just
+        something easily accepted if you're a Christian. At the very least, all of my friends appear to seek genuine
+        relationships both with God and the people around them.</div>
+
+    <button type="button" class="collapsible" onclick="openList()">Pre-Pandemic Epic friendships</button>
+    <div class="content">
+        <ul>
+            <li>Hannah Y</li>
+            <li>Sam L</li>
+            <li>TanDan</li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="collapsible" onclick="openList()">Spring 2022 Epic Friendships</button>
+    <div class="content">
+        <ul>
+            <li>Vince P</li>
+            <li>Megan K</li>
+            <li>Emma D</li>
+        </ul>
+    </div>
+    <hr>
+    <button type="button" class="collapsible" onclick="openList()">Spring 2022 Non-Epic Friendships</button>
+    <div class="content">
+        <ul>
+        </ul>
+    </div>
+
+</body>
+
+
+</html>
