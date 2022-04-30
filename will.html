@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <title>William Mencurkentang</title>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="apo.html">Back</a>
+    <h2>William Mencurkentang</h2>
+    <img src="https://imgur.com/yKEPMRP.png" class="center" height="400">
+    <p>"We all need to make choices for ourselves at the end of the day. There's nobody else to be there for you except
+        yourself."</p>
+    <button type="button" class="collapsible" onclick="openList()">Generalized Biology
+    </button>
+    <div class="content">
+        <ul>
+            <li>Gender: Male</li>
+            <li>Eye Color: Brown</li>
+            <li>Hair Color: Black</li>
+            <li>Hair Length: Short, to Neck</li>
+            <li>Zodiac Birth Sign: Taurus</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How I Met Him
+    </button>
+    <div class="content">
+        I met Will while I was pledging for Alpha Phi Omega. He was just another person to cross off the interview list
+        at the time, but we actually had a rather enjoyable conversation with each other.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How We Became Friends
+    </button>
+    <div class="content">
+        We became friends shortly after I did my interview with him. It was a natural gravitation between two rather
+        goofy but serious individuals, both studying the same major. It also helped that we were both friends with
+        Megan.
+        Additionally, we became better friends by the sheer coincidences of running into each other at the library
+        consistently at the same times.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">What I like about him and why I consider him to be a
+        life long friend
+    </button>
+    <div class="content">
+        What I like about Will is the fact that he's a genuine and honest person, along with the fact that we've shared
+        many similar interests and life experiences (as of Fall 2018 anyway). But I do consider him to be a life long friend on the basis that I can't imagine him not
+        being in my life in some way, shape or form. While I wouldn't say that we're super close friends, I think that
+        there continues to be an ideal of strong mutual respect between the two of us, which is why our friendship is
+        still strong. While I'm aware he's more loyal to other people who aren't me, I do believe that if I really need
+        Will in my life he can and he, no pun intended, will be there for me. I also consider Will to be a life long
+        friend because I trust him to do the right thing. To help other people
+        that I can't help out.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">Five Fun Facts
+    </button>
+    <div class="content">
+        <ol>
+            <li>Will is a really trusting friend and considers himself close to Megan, Emily, and Michael.</li>
+            <li>Will considers himself to be an introvert and prefers having quality over quantity friendships.</li>
+            <li>Will would prefer to work in business management over software engineering.</li>
+            <li>Will doesn't like to use social media that much and prefers to live life off the social network grid.</li>
+            <li>Will's personal philosophy is to "go with the flow" of life and live for yourself first before anyone else.</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
