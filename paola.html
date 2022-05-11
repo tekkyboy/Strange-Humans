@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-style: italic;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <title>Paola Corazon</title>
+    <script>
+        function openList() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h1>All the Strange, Strange Humans - 2022 Edition</h1>
+    <p>This website is dedicated to all of the people that I've met over the past 10 years of my life. Forever grateful
+        for the opportunity to have met them all.</p>
+    <hr>
+    <a href="apo.html">Back</a>
+    <h2>Paola Corazon</h2>
+    <img src="https://imgur.com/V6JDzXy.png" class="center" height="400">
+    <p>"I'm just trying to do my best in life, for myself and for my family."</p>
+
+    <button type="button" class="collapsible" onclick="openList()">Generalized Biology
+    </button>
+    <div class="content">
+        <ul>
+            <li>Gender: Female</li>
+            <li>Eye Color: Brown</li>
+            <li>Hair Color: Black</li>
+            <li>Hair Length: Long, to chest</li>
+            <li>Zodiac Birth Sign: Taurus</li>
+        </ul>
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How I Met Her
+    </button>
+    <div class="content">
+        I met Paola while we were pledging for Alpha Phi Omega. We were both in the same car going to Initiation Night's
+        after event at In-N-Out. She noticed that I had the TARDIS as a my lock screen, and we had a conversation about
+        Doctor Who throughout the car ride.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">How We Became Friends
+    </button>
+    <div class="content">
+        We became friends trying to get to Huntington Beach for a Corgi Beach Day. She was the only one going to the
+        event who offered to drive all the way from El Monte to Huntington Beach. Along the way, we got lost, got stuck
+        in traffic, but we bonded trying to find our way to the event itself. What furthered our friendship were our
+        common interest in Doctor Who and growing up Catholic in a non-religious high school.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">What I like about her and why I consider her to be a
+        life long friend
+    </button>
+    <div class="content">
+        Paola's my Alpha Phi Omega twin. She is my friend for life because of that. But even if we weren't Alpha Phi
+        Omega twins, we would be friends because of our shared interest in Doctor Who. And even if it wasn't for Doctor
+        Who, we would be friends because we both have had the same experience growing up and not feeling like we
+        belonged to any one group. It was that shared pain of growing up with extreme social anxiety about the future
+        and our social lives, which makes me trust her a lot.
+        <br>
+        And I honestly consider Paola to be a better person than me in so many ways. Where I saught violence, she saught
+        peace. She was always there to keep me in check, to help remind me that there are other ways to solve problems.
+        That there are other ways to live life rather than feeling angry against the rest of the world. She was there to
+        give me hope when it seemed like almost everyone else just wouldn't get it. So I appreciate her a lot because of
+        her being a part of my heart.
+    </div>
+    <button type="button" class="collapsible" onclick="openList()">Five Fun Facts
+    </button>
+    <div class="content">
+        <ol>
+            <li>Paola has been engaged for about two years.</li>
+            <li>Paola's favorite Doctor is the 10th Doctor.</li>
+            <li>Paola's has worked at Disney World.</li>
+            <li>Paola wants to leave an important legacy on this Earth, in tribute to Irene.</li>
+            <li>Paola's desired workplace would be a medium sized hotel in SoCal.</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
